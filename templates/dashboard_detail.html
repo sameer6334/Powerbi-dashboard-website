@@ -40,11 +40,11 @@
 </div>
 
 <!-- Resources Section -->
+{% if dashboard.dataset_url %}
 <div class="bg-white rounded-lg shadow-md p-6">
     <h2 class="text-xl font-semibold mb-4">Resources</h2>
     <div class="space-y-4">
         <!-- Dataset -->
-        {% if dashboard.dataset_url %}
         <div class="border-l-4 border-blue-500 pl-4">
             <h3 class="font-semibold text-gray-900 mb-1">Dataset</h3>
             <p class="text-gray-600 text-sm mb-2">Download the underlying dataset</p>
@@ -55,21 +55,7 @@
                 </svg>
             </a>
         </div>
-        {% endif %}
-
-        <!-- Power BI Project File -->
-        {% if dashboard.pbix_url %}
-        <div class="border-l-4 border-green-500 pl-4">
-            <h3 class="font-semibold text-gray-900 mb-1">Power BI Project File (.pbix)</h3>
-            <p class="text-gray-600 text-sm mb-2">Download the complete Power BI project file</p>
-            <a href="{{ dashboard.pbix_url }}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-green-600 hover:text-green-800 font-medium">
-                Download .pbix
-                <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
-                </svg>
-            </a>
-        </div>
-        {% endif %}
     </div>
 </div>
+{% endif %}
 {% endblock %}

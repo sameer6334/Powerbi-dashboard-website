@@ -2,25 +2,14 @@
   "dashboards": [
     {
       "id": 1,
-      "name": "Sales Performance Dashboard",
-      "slug": "sales-performance",
-      "description": "Comprehensive sales analytics and performance metrics across all regions and product categories.",
-      "embed_url": "https://app.powerbi.com/view?r=EXAMPLE_EMBED_URL_1",
-      "dataset_url": "https://example.com/datasets/sales-data.csv",
-      "pbix_url": "https://example.com/downloads/sales-performance.pbix",
-      "tags": ["sales", "analytics", "performance"],
+      "name": "Healthcare Dasboard",
+      "slug": "healthcare-dashboard",
+      "description": "Dashboard Description: Meditech Nexus Hospital – Healthcare Analytics - The Meditech Nexus Hospital Dashboard is a comprehensive Power BI report designed to provide insights into patient management, hospital operations, and service quality. Built on a healthcare dataset, the dashboard enables hospital administrators and staff to monitor key metrics and make data-driven decisions efficiently.",
+      "embed_url": "https://app.powerbi.com/view?r=eyJrIjoiYzdlMmYzNWUtZjRhZi00YWZjLWIzYzktM2E5MmZhMjM5NDVmIiwidCI6ImVlOTdjMTkyLWY0MWQtNGU3YS04NGU5LWM0MWRkYzIxYWI5NyJ9",
+      "dataset_url": "https://docs.google.com/spreadsheets/d/13WWWYQkJgxvxR6UZYbZwsYtwe4dCVX25/edit?usp=drive_link&ouid=109668161286199861913&rtpof=true&sd=true",
+      "tags": ["Power BI", "Healthcare Analytics", "Patient Management", "Billing Analysis", "Data Visualization"],
       "created_at": "2024-01-15T10:30:00"
-    },
-    {
-      "id": 2,
-      "name": "Marketing Campaign Tracker",
-      "slug": "marketing-campaigns",
-      "description": "Track and analyze marketing campaign performance, ROI, and engagement metrics in real-time.",
-      "embed_url": "https://app.powerbi.com/view?r=EXAMPLE_EMBED_URL_2",
-      "dataset_url": "https://example.com/datasets/marketing-data.xlsx",
-      "pbix_url": "https://example.com/downloads/marketing-campaigns.pbix",
-      "tags": ["marketing", "campaigns", "roi"],
-      "created_at": "2024-01-20T14:15:00"
     }
+    
   ]
 }
