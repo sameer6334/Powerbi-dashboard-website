@@ -1,0 +1,102 @@
+{% extends "base.html" %}
+
+{% block title %}Add Dashboard - Power BI Dashboards{% endblock %}
+
+{% block content %}
+<div class="max-w-2xl mx-auto">
+    <div class="bg-white rounded-lg shadow-md p-8">
+        <h1 class="text-3xl font-bold text-gray-900 mb-6">Add New Dashboard</h1>
+        
+        <form method="POST" action="/admin/add">
+            <div class="space-y-6">
+                <!-- Name -->
+                <div>
+                    <label for="name" class="block text-sm font-medium text-gray-700 mb-2">
+                        Dashboard Name <span class="text-red-500">*</span>
+                    </label>
+                    <input type="text" id="name" name="name" required
+                           class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
+                           placeholder="e.g., Sales Analytics Dashboard">
+                </div>
+
+                <!-- Slug -->
+                <div>
+                    <label for="slug" class="block text-sm font-medium text-gray-700 mb-2">
+                        URL Slug <span class="text-red-500">*</span>
+                    </label>
+                    <input type="text" id="slug" name="slug" required
+                           class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
+                           placeholder="e.g., sales-analytics">
+                    <p class="mt-1 text-sm text-gray-500">URL-friendly identifier (lowercase, hyphens)</p>
+                </div>
+
+                <!-- Description -->
+                <div>
+                    <label for="description" class="block text-sm font-medium text-gray-700 mb-2">
+                        Description
+                    </label>
+                    <textarea id="description" name="description" rows="3"
+                              class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
+                              placeholder="Brief description of the dashboard"></textarea>
+                </div>
+
+                <!-- Embed URL -->
+                <div>
+                    <label for="embed_url" class="block text-sm font-medium text-gray-700 mb-2">
+                        Power BI Embed URL <span class="text-red-500">*</span>
+                    </label>
+                    <input type="url" id="embed_url" name="embed_url" required
+                           class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
+                           placeholder="https://app.powerbi.com/view?r=...">
+                    <p class="mt-1 text-sm text-gray-500">Get this from Power BI's "Publish to web" or embed option</p>
+                </div>
+
+                <!-- Dataset URL -->
+                <div>
+                    <label for="dataset_url" class="block text-sm font-medium text-gray-700 mb-2">
+                        Dataset URL (Optional)
+                    </label>
+                    <input type="url" id="dataset_url" name="dataset_url"
+                           class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
+                           placeholder="https://drive.google.com/...">
+                    <p class="mt-1 text-sm text-gray-500">Link to CSV/Excel dataset or Google Drive file</p>
+                </div>
+
+                <!-- PBIX URL -->
+                <div>
+                    <label for="pbix_url" class="block text-sm font-medium text-gray-700 mb-2">
+                        .pbix File URL (Optional)
+                    </label>
+                    <input type="url" id="pbix_url" name="pbix_url"
+                           class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
+                           placeholder="https://drive.google.com/...">
+                    <p class="mt-1 text-sm text-gray-500">Link to download the Power BI project file</p>
+                </div>
+
+                <!-- Tags -->
+                <div>
+                    <label for="tags" class="block text-sm font-medium text-gray-700 mb-2">
+                        Tags (Optional)
+                    </label>
+                    <input type="text" id="tags" name="tags"
+                           class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
+                           placeholder="e.g., sales, analytics, monthly">
+                    <p class="mt-1 text-sm text-gray-500">Comma-separated tags for categorization</p>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="flex gap-4">
+                    <button type="submit"
+                            class="px-6 py-2 bg-blue-600 text-white font-medium rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                        Add Dashboard
+                    </button>
+                    <a href="/"
+                       class="px-6 py-2 bg-gray-200 text-gray-700 font-medium rounded-md hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
+                        Cancel
+                    </a>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}

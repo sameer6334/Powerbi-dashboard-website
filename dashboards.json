@@ -1,0 +1,26 @@
+{
+  "dashboards": [
+    {
+      "id": 1,
+      "name": "Sales Performance Dashboard",
+      "slug": "sales-performance",
+      "description": "Comprehensive sales analytics and performance metrics across all regions and product categories.",
+      "embed_url": "https://app.powerbi.com/view?r=EXAMPLE_EMBED_URL_1",
+      "dataset_url": "https://example.com/datasets/sales-data.csv",
+      "pbix_url": "https://example.com/downloads/sales-performance.pbix",
+      "tags": ["sales", "analytics", "performance"],
+      "created_at": "2024-01-15T10:30:00"
+    },
+    {
+      "id": 2,
+      "name": "Marketing Campaign Tracker",
+      "slug": "marketing-campaigns",
+      "description": "Track and analyze marketing campaign performance, ROI, and engagement metrics in real-time.",
+      "embed_url": "https://app.powerbi.com/view?r=EXAMPLE_EMBED_URL_2",
+      "dataset_url": "https://example.com/datasets/marketing-data.xlsx",
+      "pbix_url": "https://example.com/downloads/marketing-campaigns.pbix",
+      "tags": ["marketing", "campaigns", "roi"],
+      "created_at": "2024-01-20T14:15:00"
+    }
+  ]
+}
