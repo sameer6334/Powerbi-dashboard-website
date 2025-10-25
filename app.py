@@ -85,8 +85,8 @@ def add_security_headers(response):
     response.headers['X-Content-Type-Options'] = 'nosniff'
     response.headers['X-Frame-Options'] = 'SAMEORIGIN'
     response.headers['X-XSS-Protection'] = '1; mode=block'
-    # Allow Power BI iframes
-    response.headers['Content-Security-Policy'] = "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://*.powerbi.com https://*.powerbigov.us; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; frame-src 'self' https://*.powerbi.com https://*.powerbigov.us; img-src 'self' data: https:; connect-src 'self' https://*.powerbi.com https://*.powerbigov.us; font-src 'self' data: https://cdn.jsdelivr.net;"
+    # Allow Power BI iframes and Tailwind CSS CDN
+    response.headers['Content-Security-Policy'] = "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://*.powerbi.com https://*.powerbigov.us https://cdn.tailwindcss.com; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://cdn.tailwindcss.com; frame-src 'self' https://*.powerbi.com https://*.powerbigov.us; img-src 'self' data: https:; connect-src 'self' https://*.powerbi.com https://*.powerbigov.us; font-src 'self' data: https://cdn.jsdelivr.net https://cdn.tailwindcss.com;"
     return response
 
 if __name__ == '__main__':
