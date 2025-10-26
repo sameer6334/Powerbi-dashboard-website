@@ -2,11 +2,11 @@
   "dashboards": [
     {
       "id": 1,
-      "name": "Healthcare Dasboard",
+      "name": "Healthcare Dashboard",
       "slug": "healthcare-dashboard",
       "description": "Dashboard Description: Meditech Nexus Hospital – Healthcare Analytics - The Meditech Nexus Hospital Dashboard is a comprehensive Power BI report designed to provide insights into patient management, hospital operations, and service quality. Built on a healthcare dataset, the dashboard enables hospital administrators and staff to monitor key metrics and make data-driven decisions efficiently.",
       "embed_url": "https://app.powerbi.com/view?r=eyJrIjoiYzdlMmYzNWUtZjRhZi00YWZjLWIzYzktM2E5MmZhMjM5NDVmIiwidCI6ImVlOTdjMTkyLWY0MWQtNGU3YS04NGU5LWM0MWRkYzIxYWI5NyJ9",
-      "dataset_url": "https://docs.google.com/spreadsheets/d/13WWWYQkJgxvxR6UZYbZwsYtwe4dCVX25/edit?usp=drive_link&ouid=109668161286199861913&rtpof=true&sd=true",
+      "dataset_url": "https://docs.google.com/spreadsheets/d/1w4iNYeINZ_sDL6faQazI4xthyBvL-4Kr/edit?usp=drive_link&ouid=102961106192936161761&rtpof=true&sd=true",
       "tags": ["Power BI", "Healthcare Analytics", "Patient Management", "Billing Analysis", "Data Visualization"],
       "created_at": "2024-01-15T10:30:00"
     }
